@@ -8,10 +8,22 @@ import matplotlib.pyplot as plt
 # https://share.streamlit.io/
 # cuenta de github - agavirja
 
-
-
 # Data
 # D:\Dropbox\Empresa\Buydepa\COLOMBIA\ADMINISTRATIVA\1-INMUEBLES\DATA_INMUEBLES_EN_VENTA.xlsx
+
+
+# Deploy: video youtube https://www.youtube.com/watch?v=B0MUXtmSpiA (parte 4 - deploy) 
+#                       https://www.youtube.com/watch?v=-IM3531b1XU (parte 1)
+# 1. github
+# 2. new repository
+# 3. crear un nuevo repositorio publico
+# 4. abrirlo en github desktop
+# 5. cargar archivos en la carpeta y push a gisthub main
+# 6. ir a streamlit https://share.streamlit.io/
+# 7. new app
+# 8. deploy
+
+# Ejemplo: https://agavirja-streamlit-test-test-m6ydv9.streamlit.app/
 
 st.title('hellow world')
 st.text('Este es un texto que lo pongo')
@@ -32,5 +44,10 @@ if uploaded_file:
     ax.set_ylabel('y label')
     
     st.pyplot(fig)
+    
+    st.write("DB username:", st.secrets["db_username"])
+    st.write("DB password:", st.secrets["db_password"])
+    st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
+
     
     
