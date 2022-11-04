@@ -45,8 +45,8 @@ if uploaded_file:
     
     st.pyplot(fig)
     
-    st.write("DB username:", st.secrets["db_username"])
-    st.write("DB password:", st.secrets["db_password"])
+    #st.write("DB username:", st.secrets["db_username"])
+    #st.write("DB password:", st.secrets["db_password"])
 
     
     
